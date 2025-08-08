@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字列操作の勉強</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #5a6268;
+        }
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid #6c757d;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>文字列操作の勉強</h1>
+        <p>JavaScriptで文字列を操作する方法を学びましょう！</p>
+        
+        <h2>基本的な文字列操作</h2>
+        <button onclick="stringBasics()">文字列の基本</button>
+        <button onclick="stringLength()">文字列の長さ</button>
+        <button onclick="stringConcatenation()">文字列の連結</button>
+        
+        <h2>文字列メソッド</h2>
+        <button onclick="toUpperCase()">大文字変換</button>
+        <button onclick="toLowerCase()">小文字変換</button>
+        <button onclick="trim()">空白除去</button>
+        <button onclick="replace()">文字列置換</button>
+        
+        <h2>文字列の検索と分割</h2>
+        <button onclick="indexOf()">indexOf</button>
+        <button onclick="includes()">includes</button>
+        <button onclick="split()">split</button>
+        <button onclick="slice()">slice</button>
+        <button onclick="substring()">substring</button>
+        
+        <h2>実践的な例</h2>
+        <div>
+            <input type="text" id="nameInput" placeholder="名前を入力（例：Yamada Hiroki）" value="Yamada Hiroki">
+            <button onclick="getInitialName()">イニシャル取得</button>
+        </div>
+        <button onclick="reverseString()">文字列の逆順</button>
+        <button onclick="countWords()">単語数カウント</button>
+        <button onclick="palindromeCheck()">回文チェック</button>
+        
+        <div id="output" class="output">
+            結果がここに表示されます...
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 

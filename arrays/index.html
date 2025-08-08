@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配列の勉強</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>配列の勉強</h1>
+        <p>配列の基本的な操作を学びましょう！</p>
+        
+        <h2>基本的な配列操作</h2>
+        <button onclick="createArray()">配列を作成</button>
+        <button onclick="addElement()">要素を追加</button>
+        <button onclick="removeElement()">要素を削除</button>
+        <button onclick="accessElement()">要素にアクセス</button>
+        <button onclick="arrayLength()">配列の長さ</button>
+        
+        <h2>配列のメソッド</h2>
+        <button onclick="arrayMethods()">配列メソッドを試す</button>
+        <button onclick="arrayIteration()">配列の反復処理</button>
+        
+        <div id="output" class="output">
+            結果がここに表示されます...
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オブジェクトの勉強</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #fd7e14;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #e8690b;
+        }
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid #fd7e14;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>オブジェクトの勉強</h1>
+        <p>JavaScriptのオブジェクトについて学びましょう！</p>
+        
+        <h2>基本的なオブジェクト</h2>
+        <button onclick="basicObject()">基本的なオブジェクト</button>
+        <button onclick="objectProperties()">プロパティの操作</button>
+        <button onclick="objectMethods()">メソッド</button>
+        
+        <h2>オブジェクトの作成方法</h2>
+        <button onclick="objectLiteral()">オブジェクトリテラル</button>
+        <button onclick="constructorFunction()">コンストラクタ関数</button>
+        <button onclick="classSyntax()">クラス構文</button>
+        
+        <h2>オブジェクトの操作</h2>
+        <button onclick="objectKeys()">キーの取得</button>
+        <button onclick="objectValues()">値の取得</button>
+        <button onclick="objectEntries()">エントリーの取得</button>
+        
+        <h2>オブジェクトのコピー</h2>
+        <button onclick="objectCopy()">オブジェクトのコピー</button>
+        <button onclick="objectSpread()">スプレッド演算子</button>
+        
+        <h2>実践的な例</h2>
+        <button onclick="personObject()">人物オブジェクト</button>
+        <button onclick="bookObject()">本オブジェクト</button>
+        <button onclick="carObject()">車オブジェクト</button>
+        
+        <div id="output" class="output">
+            結果がここに表示されます...
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 

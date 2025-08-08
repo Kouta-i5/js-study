@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>変数とデータ型の勉強</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #17a2b8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #138496;
+        }
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid #17a2b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>変数とデータ型の勉強</h1>
+        <p>JavaScriptの変数とデータ型について学びましょう！</p>
+        
+        <h2>基本的な変数</h2>
+        <button onclick="basicVariables()">基本的な変数</button>
+        <button onclick="stringConcatenation()">文字列の連結</button>
+        <button onclick="typeConversion()">型変換</button>
+        
+        <h2>配列</h2>
+        <button onclick="arrayBasics()">配列の基本</button>
+        <button onclick="arrayAccess()">配列へのアクセス</button>
+        
+        <h2>ループ文</h2>
+        <button onclick="forLoop()">for文</button>
+        <button onclick="incrementDecrement()">インクリメント・デクリメント</button>
+        
+        <h2>条件分岐</h2>
+        <button onclick="ifStatements()">if文</button>
+        <button onclick="ifElseStatements()">if-else文</button>
+        <button onclick="ifElseIfStatements()">if-else if文</button>
+        
+        <h2>関数</h2>
+        <button onclick="functionBasics()">関数の基本</button>
+        <button onclick="arrowFunctions()">アロー関数</button>
+        <button onclick="defaultParameters()">デフォルトパラメータ</button>
+        <button onclick="callbackFunctions()">コールバック関数</button>
+        <button onclick="returnStatements()">return文</button>
+        
+        <h2>スコープ</h2>
+        <button onclick="variableScope()">変数のスコープ</button>
+        
+        <h2>オブジェクト</h2>
+        <button onclick="objectBasics()">オブジェクトの基本</button>
+        <button onclick="objectMethods()">オブジェクトのメソッド</button>
+        <button onclick="nestedObjects()">ネストしたオブジェクト</button>
+        
+        <h2>組み込みオブジェクト</h2>
+        <button onclick="dateObject()">Dateオブジェクト</button>
+        <button onclick="arrayMethods()">配列メソッド</button>
+        <button onclick="stringMethods()">文字列メソッド</button>
+        
+        <div id="output" class="output">
+            結果がここに表示されます...
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 

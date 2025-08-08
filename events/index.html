@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>イベント処理の勉強</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #e83e8c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #d63384;
+        }
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid #e83e8c;
+        }
+        .demo-area {
+            border: 2px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .clickable {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .clickable:hover {
+            background: #0056b3;
+        }
+        #eventTarget {
+            background: #28a745;
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>イベント処理の勉強</h1>
+        <p>JavaScriptでイベントを処理する方法を学びましょう！</p>
+        
+        <h2>基本的なイベント</h2>
+        <button onclick="clickEvent()">クリックイベント</button>
+        <button onclick="mouseEvents()">マウスイベント</button>
+        <button onclick="keyboardEvents()">キーボードイベント</button>
+        
+        <h2>イベントリスナー</h2>
+        <button onclick="addEventListener()">addEventListener</button>
+        <button onclick="removeEventListener()">removeEventListener</button>
+        <button onclick="eventObject()">イベントオブジェクト</button>
+        
+        <h2>イベントの伝播</h2>
+        <button onclick="eventBubbling()">イベントバブリング</button>
+        <button onclick="eventCapturing()">イベントキャプチャリング</button>
+        <button onclick="stopPropagation()">伝播の停止</button>
+        
+        <h2>実践的な例</h2>
+        <div class="demo-area">
+            <div id="eventTarget">クリックしてください</div>
+            <div class="clickable" id="clickable1">クリック可能な要素1</div>
+            <div class="clickable" id="clickable2">クリック可能な要素2</div>
+            <input type="text" id="textInput" placeholder="テキストを入力してください">
+            <button id="demoButton">デモボタン</button>
+        </div>
+        
+        <button onclick="pokemonGame()">ポケモンゲーム</button>
+        <button onclick="formValidation()">フォームバリデーション</button>
+        <button onclick="dragAndDrop()">ドラッグ&ドロップ</button>
+        
+        <div id="output" class="output">
+            結果がここに表示されます...
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ループ文の勉強</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ループ文の勉強</h1>
+        <p>JavaScriptの様々なループ文を学びましょう！</p>
+        
+        <h2>基本的なループ</h2>
+        <button onclick="forLoop()">for文</button>
+        <button onclick="whileLoop()">while文</button>
+        <button onclick="doWhileLoop()">do-while文</button>
+        
+        <h2>配列のループ</h2>
+        <button onclick="forEachLoop()">forEach</button>
+        <button onclick="forOfLoop()">for...of</button>
+        <button onclick="forInLoop()">for...in</button>
+        
+        <h2>ループ制御</h2>
+        <button onclick="breakExample()">break文</button>
+        <button onclick="continueExample()">continue文</button>
+        
+        <h2>実践的な例</h2>
+        <button onclick="sumArray()">配列の合計</button>
+        <button onclick="findMax()">最大値を探す</button>
+        <button onclick="countEven()">偶数の数を数える</button>
+        
+        <div id="output" class="output">
+            結果がここに表示されます...
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 

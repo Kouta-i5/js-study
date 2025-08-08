@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM操作の勉強</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #20c997;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #1ba085;
+        }
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            border-left: 4px solid #20c997;
+        }
+        .demo-area {
+            border: 2px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .post {
+            background: #e9ecef;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+        .timeline {
+            min-height: 100px;
+            border: 1px dashed #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DOM操作の勉強</h1>
+        <p>JavaScriptでDOM（Document Object Model）を操作する方法を学びましょう！</p>
+        
+        <h2>要素の選択</h2>
+        <button onclick="selectElements()">要素の選択方法</button>
+        <button onclick="querySelectorDemo()">querySelector</button>
+        <button onclick="getElementByIdDemo()">getElementById</button>
+        <button onclick="getElementsByClassNameDemo()">getElementsByClassName</button>
+        
+        <h2>要素の作成と追加</h2>
+        <button onclick="createElement()">要素の作成</button>
+        <button onclick="appendChild()">要素の追加</button>
+        <button onclick="setAttribute()">属性の設定</button>
+        
+        <h2>要素の内容変更</h2>
+        <button onclick="innerTextDemo()">innerText</button>
+        <button onclick="innerHTMLDemo()">innerHTML</button>
+        <button onclick="textContentDemo()">textContent</button>
+        
+        <h2>実践的な例</h2>
+        <div class="demo-area">
+            <div id="pokemon">ポケモン</div>
+            <div class="bar">元の内容</div>
+            <div class="timeline">タイムライン</div>
+            <button id="button">ボタン</button>
+            <div id="output">出力エリア</div>
+        </div>
+        
+        <button onclick="pokemonDemo()">ポケモンデモ</button>
+        <button onclick="timelineDemo()">タイムラインデモ</button>
+        <button onclick="buttonDemo()">ボタンデモ</button>
+        
+        <div id="output" class="output">
+            結果がここに表示されます...
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html> 
